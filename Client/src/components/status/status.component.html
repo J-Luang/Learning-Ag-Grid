@@ -1,0 +1,5 @@
+<select [(ngModel)]="dataValue" (change)="getStatus($event)">
+    <option *ngFor="let stats of status" value="{{stats.number}}">
+        {{stats.name}}
+    </option>
+</select>

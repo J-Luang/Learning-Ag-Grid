@@ -1,0 +1,19 @@
+<div style="margin-bottom: 5px;">
+    <button (click)="addNewRow()">Add</button>
+</div>
+<div class="container">
+<div id="left"></div>
+<div div="center">
+<ag-grid-angular 
+    style=" height:500px;" 
+    class="ag-theme-dark" 
+    [rowSelection]="rowSelection"
+    [singleClickEdit]="true"
+    [frameworkComponents]="frameworkComponents" 
+    [defaultColDef]="defaultColDef"
+    [columnDefs]="columns"
+    (gridReady)="onGridReady($event)">
+</ag-grid-angular>
+</div>
+<div id="right"></div>
+</div>
